@@ -1,0 +1,13 @@
+export const GET_BLOCK = 'getBlock';
+export const GET_UNCLE = 'getUncle';
+export const GET_BLOCK_SUCCESS = 'GET_BLOCK_SUCCESS';
+export const GET_BLOCK_ERROR = 'GET_BLOCK_SUCCESS';
+
+export const GET_BLOCK_TRANSACTION_COUNT = 'getBlockTransactionCount';
+export const GET_BLOCK_UNCLE_COUNT = 'getBlockUncleCount';
+export const GET_BLOCK_PROPERTY_SUCCESS = 'GET_BLOCK_PROPERTY_SUCCESS';
+export const GET_BLOCK_PROPERTY_ERROR = 'GET_BLOCK_PROPERTY_ERROR';
+
+export const GET_CURRENT_BLOCK_NUMBER = 'getBlockNumber';
+export const GET_CURRENT_BLOCK_NUMBER_SUCCESS = 'GET_CURRENT_BLOCK_NUMBER_SUCCESS';
+export const GET_CURRENT_BLOCK_NUMBER_ERROR = 'GET_CURRENT_BLOCK_NUMBER_ERROR';
