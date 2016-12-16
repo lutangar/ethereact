@@ -1,16 +1,17 @@
 {
-  "name": "botanical-magazine.com",
-  "version": "1.0.0",
+  "name": "ethereact",
+  "version": "0.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "lint": "eslint src/js tasks",
     "dev": "./node_modules/.bin/webpack --watch -d --config=webpack.config.dev.js",
     "prod": "./node_modules/.bin/webpack --watch -d --config=webpack.config.prod.js",
-    "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback --content-base ./public/ --output-public-path /public/"
+    "start": "./node_modules/.bin/webpack-dev-server --history-api-fallback --content-base ./public/ --output-public-path /public/",
+    "geth": "geth --rpc --rpcaddr 'localhost' --rpcport '8545' --rpc --rpccorsdomain 'http://localhost:8080' console"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "lutangar",
+  "license": "",
   "dependencies": {
     "babel-polyfill": "^6.16.0",
     "connect": "^3.5.0",

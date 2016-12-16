@@ -16,6 +16,9 @@ See all available tasks in `package.json` at `scripts`:
 2. Run the development server:
 `npm start`
 
+3. If `geth` is installed, you can use this helper task to start your local RPC service:
+`npm run geth`
+
 ## Material UI
 
 See http://www.material-ui.com/#/customization/themes for other components example.
