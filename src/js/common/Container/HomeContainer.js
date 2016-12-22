@@ -4,7 +4,9 @@ import { fetchCurrentBlockNumber } from '../Action/BlockActions';
 
 function mapStateToProps(state) {
   return {
-    blocks: Object.keys(state.blocks).map(id => state.blocks[id]).sort((a, b) => a.timestamp > b.timestamp ? -1 : 1),
+    blocks: Object.keys(state.blocks).map(id => state.blocks[id]).sort((a, b) =>
+      (a.timestamp > b.timestamp ? -1 : 1)
+    ),
     currentBlockNumber: state.currentBlock,
   };
 }
@@ -12,6 +14,6 @@ function mapStateToProps(state) {
 export default connect(
   mapStateToProps,
   {
-    fetchCurrentBlock: fetchCurrentBlockNumber
+    fetchCurrentBlock: fetchCurrentBlockNumber,
   }
 )(Home);

@@ -1,6 +1,6 @@
 import * as BLOCK from '../Constant/Block';
 import initialState from '../initialState';
-import BlockSchema  from '../Schema/BlockSchema';
+import BlockSchema from '../Schema/BlockSchema';
 
 export default function blockReducer(state = initialState[BlockSchema.getKey()], action) {
   switch (action.type) {

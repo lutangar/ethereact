@@ -1,9 +1,9 @@
 import React, { PropTypes, Component } from 'react';
-import CustomPropTypes from '../PropTypes';
-import { Card, CardActions, CardHeader, CardTitle, CardText } from 'material-ui/Card';
+import { Card, CardTitle, CardText } from 'material-ui/Card';
 import Paper from 'material-ui/Paper';
 import LinearProgress from 'material-ui/LinearProgress';
 import { List, ListItem } from 'material-ui/List';
+import CustomPropTypes from '../PropTypes';
 import Transaction from './Transaction';
 
 class Block extends Component {
@@ -41,7 +41,7 @@ class Block extends Component {
             <List>
               <ListItem
                 open={this.state.open}
-                primaryTogglesNestedList={true}
+                primaryTogglesNestedList
                 onNestedListToggle={this.handleToggle}
                 primaryText="Transactions"
                 nestedItems={nestedItems}
@@ -53,7 +53,7 @@ class Block extends Component {
           </Paper>
         </CardText>
       </Card>
-    )
+    );
   }
 }
 

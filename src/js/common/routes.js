@@ -7,6 +7,6 @@ import NotFound from './Component/Page/NotFound';
 export default (
   <Route path="/" component={App}>
     <IndexRoute component={HomeContainer} />
-    <Route path="404" status={404} component={NotFound}/>
+    <Route path="404" status={404} component={NotFound} />
   </Route>
 );

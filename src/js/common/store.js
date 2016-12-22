@@ -6,10 +6,10 @@ import initialState from './initialState';
 import rootReducer from './Reducer';
 import rootSaga from './Saga';
 
-const sagaMiddleware = createSagaMiddleware();
+const saga = createSagaMiddleware();
+const logger = createLogger();
+const store = applyMiddleware(saga, logger)(createStore)(rootReducer, initialState);
 
-export default applyMiddleware(
-  sagaMiddleware
-)(createStore)(rootReducer, initialState);
+saga.run(rootSaga);
 
-sagaMiddleware.run(rootSaga);
+export default store;

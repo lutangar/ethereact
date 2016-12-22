@@ -25,8 +25,8 @@ class Home extends Component {
   render() {
     return (
       <div className="mdl-grid home">
-        {this.props.blocks.length == 0 &&
-          <CircularProgress className="mdl-cell--col-12"/>
+        {this.props.blocks.length === 0 &&
+          <CircularProgress className="mdl-cell--col-12" />
         }
 
         {this.props.blocks.map((block, key) =>

@@ -11,7 +11,11 @@ export const fetchBlock = hash => ({
 
 export const fetchBlockTransactionCount = hash => ({
   type: CONSTANT.WEB3_API_CALL,
-  types: [BLOCK.GET_BLOCK_TRANSACTION_COUNT, BLOCK.GET_BLOCK_PROPERTY_SUCCESS, BLOCK.GET_BLOCK_PROPERTY_ERROR],
+  types: [
+    BLOCK.GET_BLOCK_TRANSACTION_COUNT,
+    BLOCK.GET_BLOCK_PROPERTY_SUCCESS,
+    BLOCK.GET_BLOCK_PROPERTY_ERROR,
+  ],
   args: [hash],
   property: 'transactionCount',
 });
@@ -25,7 +29,11 @@ export const fetchUncle = hash => ({
 
 export const fetchBlockUncleCount = hash => ({
   type: CONSTANT.WEB3_API_CALL,
-  types: [BLOCK.GET_BLOCK_UNCLE_COUNT, BLOCK.GET_BLOCK_PROPERTY_SUCCESS, BLOCK.GET_BLOCK_PROPERTY_ERROR],
+  types: [
+    BLOCK.GET_BLOCK_UNCLE_COUNT,
+    BLOCK.GET_BLOCK_PROPERTY_SUCCESS,
+    BLOCK.GET_BLOCK_PROPERTY_ERROR,
+  ],
   property: 'uncleCount',
   args: [hash],
 });

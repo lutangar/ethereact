@@ -1,7 +1,7 @@
-import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, PureComponent } from 'react';
 import { ListItem } from 'material-ui/List';
 
-class Transaction extends Component {
+class Transaction extends PureComponent {
   static propTypes = {
     transaction: PropTypes.string.isRequired,
   };
@@ -12,7 +12,7 @@ class Transaction extends Component {
         className="transaction"
         primaryText={this.props.transaction}
       />
-    )
+    );
   }
 }
 

@@ -1,6 +1,5 @@
-import { put, call, take } from 'redux-saga/effects';
-import { takeEvery, takeLatest } from 'redux-saga';
-import { WEB3_API_CALL } from '../Constant';
+import { put } from 'redux-saga/effects';
+import { takeLatest } from 'redux-saga';
 import { GET_CURRENT_BLOCK_NUMBER_SUCCESS } from '../Constant/Block';
 import { fetchBlock } from '../Action/BlockActions';
 
