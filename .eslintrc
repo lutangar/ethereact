@@ -33,6 +33,7 @@
     "no-unused-vars": "warn",
     "prefer-const": "warn",
     "no-nested-ternary": "warn",
+    "linebreak-style": "off",
     "comma-dangle": ["warn", {
       "arrays": "always-multiline",
       "objects": "always-multiline",
