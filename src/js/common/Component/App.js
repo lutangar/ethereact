@@ -4,6 +4,7 @@ import { indigo500, indigo700, purpleA200 } from 'material-ui/styles/colors';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import AppBar from 'material-ui/AppBar';
+import NetworkStatus from 'react-web3-network-status';
 
 injectTapEventPlugin();
 
@@ -29,6 +30,7 @@ class App extends Component {
     return (
       <MuiThemeProvider muiTheme={App.getMuiTheme()}>
         <div>
+          <NetworkStatus />
           <AppBar title="Ethereact" />
           {this.props.children}
         </div>

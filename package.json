@@ -13,7 +13,7 @@
   "author": "lutangar",
   "license": "",
   "dependencies": {
-    "babel-polyfill": "^6.16.0",
+    "babel-polyfill": "^6.26.0",
     "connect": "^3.5.0",
     "express": "^4.14.0",
     "json-loader": "^0.5.4",
@@ -27,12 +27,13 @@
     "react-router": "^3.0.0",
     "react-router-redux": "^4.0.7",
     "react-tap-event-plugin": "^2.0.1",
+    "react-web3-network-status": "^1.0.0",
     "redux": "^3.6.0",
     "redux-logger": "^2.7.4",
     "redux-saga": "^0.13.0",
     "reselect": "^2.5.4",
     "serve-static": "^1.11.1",
-    "web3": "^0.17.0-beta"
+    "web3": "^0.20.2"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
